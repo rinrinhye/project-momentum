@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>momentum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/914e5789da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/momentum.css" />
+  </head>
+  <body>
+    <!-- login Page -->
+    <div class="login-layout">
+      <h2 class="greeting">Hello!</h2>
+      <form class="login-form">
+        <input type="text" required maxlength="16" />
+        <button class="btn-login">LOGIN</button>
+      </form>
+    </div>
+    <!-- main Page -->
+    <div class="main-layout">
+      <header class="main-header">
+        <div>
+        <div class="bg-container">
+          <ul class="ul-btn-bg">
+            <li><button class="btn-bg-change change-color1"></button></li>
+            <li><button class="btn-bg-change change-color2"></button></li>
+            <li><button class="btn-bg-change change-color3"></button></li>
+            <li><button class="btn-bg-change change-color4"></button></li>
+            <li><button class="btn-bg-change change-color5"></button></li>
+            <li><button class="btn-bg-change change-color6"></button></li>
+            <li><button class="btn-bg-change change-color7"></button></li>
+            <li><button class="btn-bg-change change-color8"></button></li>
+            <li><button class="btn-bg-change change-color9"></button></li>
+          </ul>
+        </div>    
+        <div class="weather-container">   
+          <span class="weather"></span>
+          <span class="temp"></span>  
+          <p class="city"></p>
+        </div> 
+      </div>
+        <h2 class="user-name"></h2>
+        <button class="btn-loggout" type="button">LOGOUT</button>
+      </header>
+      <section>
+        <div class="quote-container">
+          <p class="quote"></p>
+          <p class="author"></p>
+        </div>
+        <form class="todo-form">
+          <input type="text" />
+          <button></button>
+          <ul class="todo-list-box"></ul>
+        </form>
+      </section>
+      <p class="clock"></p>         
+
+      <script src="./login.js"></script>
+      <script src="./clock.js"></script>
+      <script src="./quotes.js"></script>
+      <script src="./background.js"></script>
+      <script src="./todo.js"></script>
+      <script src="./water.js"></script>
+    </div>
+  </body>
+</html>

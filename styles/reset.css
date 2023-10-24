@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}

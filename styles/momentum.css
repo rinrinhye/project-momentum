@@ -1,302 +1,102 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Noto Sans','Noto Sans KR',  sans-serif;
-
+.layout {
+  position: relative;
+  padding: 20px 30px;
+  min-width: 600px;
+  width: 1000px;
+  height: 800px;
+  border-radius: 40px;
+  box-shadow: rgba(99, 99, 100, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
+
+.header {
+  width: 100%;
+  margin-bottom: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  color: rgb(33, 33, 33);
-}
-ul {
-  list-style: none;
-}
-li {
-  list-style: none;
 }
 
-a {
-  text-decoration: none;
+.button-list {
+  position: absolute;
+  left: -45px;
+  top: 50px;
 }
 
-button {
-  border: none;
-  background-color: transparent;
-}
-
-/* bgc */
-
-.bg-color1 {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-}
-.bg-color2 {
-  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
-}
-.bg-color3 {
-  background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
-}
-.bg-color4 {
-  background-image: linear-gradient(
-    to top,
-    #f3e7e9 0%,
-    #e3eeff 99%,
-    #e3eeff 100%
-  );
-}
-.bg-color5 {
-  background-color: #e4e4e1;
-  background-image: /* radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%),  */ linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(143, 152, 157, 0.6) 100%
-  );
-  background-blend-mode: normal, multiply;
-}
-.bg-color6 {
-  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-}
-.bg-color7 {
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-}
-.bg-color8 {
-  background: #dbe6f6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #c5796d,
-    #dbe6f6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #c5796d,
-    #dbe6f6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.bg-color9 {
-  background: #f1f2b5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #135058,
-    #f1f2b5
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #135058,
-    #f1f2b5
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.ul-btn-bg {
-  display: flex;
-}
-
-.btn-bg {
+.button-list li button {
   cursor: pointer;
-  width: 30px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border-radius: 10px;
   border: none;
-}
-
-.btn-bg-change {
-  cursor: pointer;
-  width: 18px;
-  height: 18px;
-  border-radius: 100%;
-  border: none;
-}
-
-.change-color1 {
-  background-color: #c3cfe2;
-}
-.change-color2 {
-  background-color: #93a5cf;
-}
-.change-color3 {
-  background-color: #ae8b9c;
-}
-.change-color4 {
-  background-color: #e3eeff;
-}
-.change-color5 {
-  background-color: rgb(143, 152, 157);
-}
-.change-color6 {
-  background-color: #304352;
-}
-.change-color7 {
-  background-color: #ace0f9;
-}
-.change-color8 {
-  background-color: #c5796d;
-}
-.change-color9 {
-  background-color: #135058;
-}
-
-/* water-container */
-
-.water-container {
-  display: flex;
-  font-size: 0.9rem;
-  display: none;
-  
-}
-
-.cup {
-  padding: 5px 10px;
-  margin: 4px;
-}
-
-/* todo */
-
-.todo-form {
-  /* width: 400px; */
+  margin-bottom: 10px;
 }
 
 .todo-form input {
   outline: none;
   width: 100%;
+  padding: 0 3px;
+  font-size: 1rem;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid black;
-  padding: 0 3px;
 }
 
-.todo-list-box {
-}
-
-.todo-list-box li {
+.todo-list li {
   display: flex;
+  position: relative;
   justify-content: space-between;
   padding: 3px 5px;
+  margin: 4px;
 }
-.todo-list-box li:hover {
+.todo-list li:hover {
   cursor: pointer;
   background-color: #ffffff2c;
   border-radius: 5px;
 }
 
-.todo-list-box button {
-  cursor: pointer;
-}
-
-/* login layout */
-
-.login-layout {
-  min-width: 600px;
-  min-height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-.greeting {
-  font-size: 4rem;
-  color: rgb(33, 33, 33);
-  margin-bottom: 0.4rem;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-form input {
-  background: transparent;
-  font-size: 2rem;
-  color: rgb(33, 33, 33);
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #333;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.btn-login {
-  color: rgb(33, 33, 33);
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-/* main-layout */
-
-.main-layout {
-  box-sizing: border-box;
-  padding: 50px;
-min-width: 600px;
-width: 1000px;
-height: 800px;
-    border-radius: 40px;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-.main-header{
-  /* position: relative; */
-  width: 100%;
-  margin-bottom: 20px;
-display: flex;
-justify-content: space-between;
-position: relative;
-}
-
-.bg-container{
-}
-
-.bg-container li{
-  margin-right: 6px;
-}
-
-.weather-container{
-  font-size: 0.9rem;
-}
-
-.user-name{
-  font-size: 3rem;
-  font-weight: 800;
+.todo-list i {
   position: absolute;
-  left:50%;
-  top: 30%;
-  transform: translate(-50%,-50%);
+  right: 6px;
+  top: 6px;
+  color: rgb(102, 102, 102);
 }
 
-.btn-loggout{
+.user-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.logout-button {
   height: 30px;
-cursor: pointer;
-font-size: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-section{
+.content {
   padding: 30px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 30px;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 20px;
   flex: 1;
   height: 80%;
 }
 
-.quote-container{
+.quote-container {
   width: 450px;
 }
 
-.clock{
+.clock {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
   width: 100%;
-  height: 10%;
   font-size: 2rem;
   text-align: center;
   font-weight: 600;
 }
 
-/* display hidden */
-.hidden {
-  display: none;
+.weather-container {
+  /* font-size: 0.9rem; */
 }

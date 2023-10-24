@@ -1,0 +1,36 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.greeting {
+  font-size: 4rem;
+  color: rgb(33, 33, 33);
+  margin-bottom: 0.4rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input {
+  background: transparent;
+  font-size: 2rem;
+  color: rgb(33, 33, 33);
+  text-align: center;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+.login-button {
+  color: rgb(33, 33, 33);
+  cursor: pointer;
+  border-radius: 4px;
+}
